@@ -4,6 +4,9 @@ body{
   color: #4B4B4B;
 }
 
+section .heading{
+  margin-bottom: 30px;
+}
 
 /* navigation */
 .navbar-brand {
@@ -23,7 +26,7 @@ body{
 
 
 /* banner */
-#dormoco-banner {
+/* #dormoco-banner {
   width: 100%;
   height: 70vh;
   display: block;
@@ -31,13 +34,57 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+} */
+
+#dormoco-banner-container{
+  perspective: 800px;
 }
+
+section#dormoco-banner{
+  margin:0px auto;
+  padding: 0px;
+  display: table;
+  position:relative;
+  margin-top:6vh;
+  width: 95%;
+  height:500px;
+  border-radius:8px;
+  background-image: url("img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  /*-webkit-transform: translateZ(40px);*/
+              /*-moz-transform: translateZ(40px);
+               -ms-transform: translateZ(40px);
+                -o-transform: translateZ(40px);
+                   transform: translateZ(40px);*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                           -webkit-transform: rotateX(0deg), rotateY(0deg); /* Chrome, Safari, Opera  */
+            -moz-transform:rotateX(0deg) rotateY(0deg);
+            -ms-transform:rotateX(0deg) rotateY(0deg);
+            -o-transform:rotateX(0deg) rotateY(0deg);
+            transform: rotateX(0deg) rotateY(0deg);
+}
+
 
 
 
 /* Choose your role */
 section#dormoco-roles{
   margin-top: 60px;
+}
+
+#dormoco-roles .row p{
+  font-size: 16px;
+  padding: 20px;
 }
 
 #dormoco-roles .dormoco-role{
@@ -59,14 +106,14 @@ section#dormoco-roles{
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
 }
 
-#dormoco-roles .dormoco-role p{
+#dormoco-roles .dormoco-role h3{
   position: absolute;
   top:calc(50% - 8px);
   left: 0px;
   right: 0px;
   text-align: center;
   color: white;
-  font-size: 20px;
+  font-size: 26px;
 }
 
 a.clickable-block{
@@ -87,7 +134,78 @@ a.clickable-block{
     border-radius: 6px;
     padding-top: 51%; /* 0.75 or 0.5625 width */
   }
+
+  section#dormoco-banner {
+    height: 300px;
+  }
 }
+
+/* team members */
+section#dormoco-team{
+  margin-top: 60px;
+}
+
+section#dormoco-team h2{
+  font-size: 28px;
+}
+
+
+
+section#dormoco-team p, hr{
+  padding: 0px;
+}
+
+#dormoco-team .card {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 4px 22px 0 rgba(0, 0, 0, 0.22), 0 6px 31px 0 rgba(0, 0, 0, 0.21);
+  margin: 10px auto;
+  -webkit-transition: 0.5s; /* Safari */
+  transition: 0.5s;
+  border-bottom: none;
+}
+
+#dormoco-team .card:hover{
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+}
+
+#dormoco-team .container{
+  margin-top: 10px;
+  position: relative;
+}
+
+#dormoco-team .card a{
+  float: right;
+  width: 45px;
+}
+
+#dormoco-team .card h2{
+  font-size: 22px;
+}
+
+#dormoco-team .card .container > div:first-of-type {
+float: left;
+}
+
+
+
+
+
+#dormoco-team .card p{
+  font-size: 16px;
+}
+
+#dormoco-team .card img{
+  border-radius: 4px 4px 0px 0px;
+  width: 100%;
+}
+
+#dormoco-team .title {
+  color: grey;
+  font-weight: 100;
+  font-size: 0.72em;
+}
+
+
 
 
 
