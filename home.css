@@ -8,6 +8,11 @@ section .heading{
   margin-bottom: 30px;
 }
 
+section .heading{
+  margin-top: 60px;
+}
+
+
 /* navigation */
 .navbar-brand {
   position: absolute;
@@ -35,6 +40,25 @@ section .heading{
   background-size: cover;
   background-position: center;
 } */
+
+#myVideo {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 12px 12px 12px 12px;
+
+
+}
+
+
+
+#banner-video{
+    margin-top:6vh;
+}
+
+
 
 #dormoco-banner-container{
   perspective: 800px;
@@ -77,10 +101,27 @@ section#dormoco-banner{
 
 
 
-/* Choose your role */
-section#dormoco-roles{
-  margin-top: 60px;
+/* about */
+
+.image-and-description p{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 1em;
 }
+
+.image-and-description div{
+  margin-top: 1.5em;
+}
+
+
+
+
+
+
+/* Choose your role */
+/* section#dormoco-roles{
+  margin-top: 60px;
+} */
 
 #dormoco-roles .row p{
   font-size: 16px;
@@ -138,14 +179,19 @@ a.clickable-block{
   section#dormoco-banner {
     height: 300px;
   }
+
+   section h2{
+  font-size: 20px !important;
+}
+
 }
 
 /* team members */
-section#dormoco-team{
+/* section#dormoco-team{
   margin-top: 60px;
 }
-
-section#dormoco-team h2{
+ */
+ h2{
   font-size: 28px;
 }
 
@@ -178,8 +224,8 @@ section#dormoco-team p, hr{
   width: 45px;
 }
 
-#dormoco-team .card h2{
-  font-size: 22px;
+#dormoco-team .card h3{
+  font-size: 20px;
 }
 
 #dormoco-team .card .container > div:first-of-type {
